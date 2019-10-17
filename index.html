@@ -32,13 +32,30 @@
             border: thin solid #2dce89;
         }
 
-        @media only screen and (max-width: 380px) {
+        @media only screen and (width: 380px) {
           .float-right, .float-left {
                max-width: 10rem;
            }
            .btn {
                margin-top: 9px;
            }
+       }
+
+       @media only screen and (width: 2560px) {
+            #benefit {
+                margin-left: 40rem;
+            }
+            #beneimg {
+                bottom: 30rem;
+                left: 10rem;
+            }
+            #beneem {
+                bottom: 30rem;
+                margin-left: 40rem;
+            }
+            .benefit {
+                max-height: 54rem;
+            }
        }
         
         .custom-toggler .navbar-toggler-icon {
@@ -51,7 +68,6 @@
         .benefit{
             box-sizing: border-box;
             background-color: #333634;
-            padding-left: 30px;
         }
        .start-learning-button{
             color: white;
@@ -78,8 +94,14 @@
             color: #f6f7f0;
             font-weight: bold;
         }
+
+        ul {
+            list-style-type: none;
+        }
+
         li{
             list-style: none;
+            list-style-type: none;
             color: #f6f7f0;
             font-size: 20px;
             letter-spacing: 0.5px;
@@ -303,24 +325,24 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid row benefit" >
-        <div class="benefit col-sm-4 ">
-            <h2> Benefits </h2>
-            <ul>
-                <li> Full time Mentorship</li>
+    <div class="container-fluid row benefit col-lg-12" >
+        <div class="container benefit col-sm-4 col-lg-12" id="benefit">
+            <h2 class="h2 m-5"> Benefits </h2>
+            <ul class="m-5">
+                <li > Full time Mentorship</li>
                 <li> Expert Instructors</li>
                 <li> Real Time Collaboration</li>
                 <li> Build Real Time Products</li>
                 <li> Learn up-to-date remote tools</li>
                 <li> Offline Meet-ups</li>
             </ul>
-            <a href="register.html" style="color: #fff;"><button class="btn btn-success mb-4" title="Start learning"> Start Learning</button></a> 
+            <a href="register.html" style="color: #fff;"><button class="btn btn-success mb-4 m-5" title="Start learning"> Start Learning</button></a> 
         </div>
-        <div class="col-sm-8">
-            <img style="float: right; padding:30px; width:398px; height: 587px;
+        <div class="col-sm-8" id="beneimg">
+            <img style="float: right; width:398px; height: 587px;
 " class="img-fluid" src="https://res.cloudinary.com/ratselaft/image/upload/v1571145212/screen1_uvs2zn.png">
         </div>
-        <div class="col-md-8 offset-md-1">
+        <div class="col-md-8 col-lg-4 offset-md-1" id="beneem">
             <h4 class="font-weight-bold" style="color: white;">Subscribe to our Newsletter</h4>
             <p style="color: white;">Stay Updated with our latest news, discount and promotions</p>
             <form class="form-inline pb-5">
