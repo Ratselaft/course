@@ -32,31 +32,89 @@
             border: thin solid #2dce89;
         }
 
-        @media only screen and (width: 380px) {
+        #imgsm{
+            float: right;
+        }
+
+        @media only screen and (width: 320px) {
           .float-right, .float-left {
-               max-width: 10rem;
-           }
-           .btn {
-               margin-top: 9px;
+               width: 100%;
+               margin-top: 0.5rem;
            }
        }
 
        @media only screen and (width: 2560px) {
             #benefit {
-                margin-left: 40rem;
+                left: 44rem;
+                margin-top: 4rem;
             }
             #beneimg {
-                bottom: 30rem;
-                left: 10rem;
+                margin-top: 2.5rem;
+                right: 44rem;
             }
             #beneem {
-                bottom: 30rem;
-                margin-left: 40rem;
-            }
-            .benefit {
-                max-height: 54rem;
+                left: 31rem;
             }
        }
+
+       @media only screen and (width: 1440px) {
+            #benefit {
+                left: 9rem;
+                margin-top: 4rem;
+            }
+            #beneimg {
+                right: 6rem;
+                margin-top: 4rem;
+            }
+            #beneem {
+                left: 2rem;
+            }
+       }
+
+            @media only screen and (max-width: 375px) {
+            #beneimg {
+                padding-bottom: 3rem;
+                }
+            }
+
+            @media only screen and (width: 1024px) {
+                #benefit {
+                    left: 4rem;
+                    margin-top: 5rem;
+                }
+                #beneimg {
+                    right: 6rem;
+                    margin-top: 5rem;
+                }
+                #beneem{
+                    left: -2rem;
+                    margin-top: -5rem;
+                }
+            }
+
+            @media only screen and (width: 768px) {
+                #benefit {
+                    left: 3rem;
+                    margin-top: 2rem;
+                }
+                #beneimg {
+                    right: 2rem;
+                    margin-top: 3rem;
+                }
+                .float-right, .float-left {
+                    width: 100%;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            @media only screen and (width: 425px) {
+                #benefit {
+                    left: 2rem;
+                }
+                #beneimg {
+                    padding-bottom: 3rem;
+                }
+            }
         
         .custom-toggler .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -66,6 +124,7 @@
             border-color: #000;
         }
         .benefit{
+            /* max-height: 50rem; */
             box-sizing: border-box;
             background-color: #333634;
         }
@@ -325,10 +384,10 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid row benefit col-lg-12" >
-        <div class="container benefit col-sm-4 col-lg-12" id="benefit">
-            <h2 class="h2 m-5"> Benefits </h2>
-            <ul class="m-5">
+    <div class="container-fluid row benefit" >
+        <div class="container benefit col-sm-4 " id="benefit">
+            <h2 class="h2 "> Benefits </h2>
+            <ul id="benelist">
                 <li > Full time Mentorship</li>
                 <li> Expert Instructors</li>
                 <li> Real Time Collaboration</li>
@@ -336,17 +395,16 @@
                 <li> Learn up-to-date remote tools</li>
                 <li> Offline Meet-ups</li>
             </ul>
-            <a href="register.html" style="color: #fff;"><button class="btn btn-success mb-4 m-5" title="Start learning"> Start Learning</button></a> 
+            <a id="benebtn" href="register.html" style="color: #fff;"><button class="btn btn-success mb-4" title="Start learning"> Start Learning</button></a> 
         </div>
         <div class="col-sm-8" id="beneimg">
-            <img style="float: right; width:398px; height: 587px;
-" class="img-fluid" src="https://res.cloudinary.com/ratselaft/image/upload/v1571145212/screen1_uvs2zn.png">
+            <img id="imgsm" class="img-fluid" src="https://res.cloudinary.com/ratselaft/image/upload/v1571145212/screen1_uvs2zn.png">
         </div>
         <div class="col-md-8 col-lg-4 offset-md-1" id="beneem">
             <h4 class="font-weight-bold" style="color: white;">Subscribe to our Newsletter</h4>
             <p style="color: white;">Stay Updated with our latest news, discount and promotions</p>
             <form class="form-inline pb-5">
-                <input type="email" class="form-control   col-sm-9  col-12  " placeholder="Email Address"><button type="submit" class="btn btn-success mt-2 mt-sm-0 ml-sm-2">Subscribe</button>
+                <input type="email" class="form-control   col-sm-9  col-12  " placeholder="Email Address"><button type="submit" class="btn btn-success mt-2 mt-sm-0 ml-sm-2" id="embtn">Subscribe</button>
             </form>
         </div>
     </div>
