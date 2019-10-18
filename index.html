@@ -93,7 +93,7 @@
                 }
             }
 
-            @media only screen and (width: 1024px) {
+            @media only screen and (max-width: 1024px) {
                 #benefit {
                     left: 4rem;
                     margin-top: 5rem;
@@ -108,7 +108,22 @@
                 }
             }
 
-            @media only screen and (width: 768px) {
+            @media only screen and (min-width: 1024px) {
+                #benefit {
+                    padding-left: 13rem;
+                    margin-top: 5rem;
+                }
+                #imgsm {
+                    margin-right: 4rem;
+                    margin-top: 5rem;
+                }
+                #beneem{
+                    margin-left: 11rem;
+                    margin-top: -1rem;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
                 #benefit {
                     left: 3rem;
                     margin-top: 2rem;
@@ -404,7 +419,7 @@
         </div>
     </div>
     <div class="container-fluid row benefit" >
-        <div class="container benefit col-sm-4 " id="benefit">
+        <div class="container benefit col-sm-4" id="benefit">
             <h2 class="h2 "> Benefits </h2>
             <ul id="benelist">
                 <li > Full time Mentorship</li>
