@@ -31,6 +31,124 @@
             color: #fff;
             border: thin solid #2dce89;
         }
+
+        #imgsm{
+            float: right;
+        }
+
+        /* #benefit {
+                margin-left: 1rem;
+                margin-top: 4rem;
+            }
+
+            #imgsm {
+                padding-left: 4rem;
+                margin-top: -14rem;
+            }
+
+            #beneem {
+                margin-left: 2.1rem;
+            } */
+
+        @media only screen and (width: 320px) {
+          .float-right, .float-left {
+               width: 100%;
+               margin-top: 0.5rem;
+           }
+       }
+
+       @media only screen and (width: 2560px) {
+            #benefit {
+                left: 44rem;
+                margin-top: 4rem;
+            }
+            #imgsm {
+                margin-top: 2.5rem;
+                margin-right: 43rem;
+            }
+            #beneem {
+                margin-left: 42rem;
+                margin-top: 1rem;
+            }
+       }
+
+        @media only screen and (width: 1440px) {
+            #benefit {
+                left: 9rem;
+                margin-top: 4rem;
+            }
+            #imgsm {
+                margin-right: 8rem;
+                margin-top: 2.4rem;
+            }
+            #beneem {
+                left: 2rem;
+                margin-top: 1rem;
+            }
+       }
+
+            @media only screen and (max-width: 375px) {
+            #beneimg {
+                padding-bottom: 3rem;
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                #benefit {
+                    left: 4rem;
+                    margin-top: 5rem;
+                }
+                #imgsm {
+                    margin-right: 2rem;
+                    margin-top: 2rem;
+                }
+                #beneem{
+                    margin-left: 4rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                #benefit {
+                    padding-left: 13rem;
+                    margin-top: 5rem;
+                }
+                #imgsm {
+                    margin-right: 4rem;
+                    margin-top: 5rem;
+                }
+                #beneem{
+                    margin-left: 11rem;
+                    margin-top: -1rem;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                #benefit {
+                    left: 3rem;
+                    margin-top: 2rem;
+                }
+                #imgsm {
+                    padding-right: 2rem;
+                    margin-top: 3rem;
+                    padding-bottom: 2rem;
+                }
+                .float-right, .float-left {
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+            }
+
+            @media only screen and (width: 425px) {
+                #benefit {
+                    left: 2rem;
+                }
+                #beneimg {
+                    padding-bottom: 3rem;
+                }
+            }
+
+            
         
         .custom-toggler .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -40,9 +158,9 @@
             border-color: #000;
         }
         .benefit{
+            /* max-height: 50rem; */
             box-sizing: border-box;
             background-color: #333634;
-            padding-left: 30px;
         }
        .start-learning-button{
             color: white;
@@ -55,7 +173,7 @@
             font-size: 20px;
             outline: none;
         }
-        li:before{
+        .benefit li:before{
             color: #f6f7f0;
             content: "\f3fd";
             display: inline-block;
@@ -69,8 +187,14 @@
             color: #f6f7f0;
             font-weight: bold;
         }
+
+        ul {
+            list-style-type: none;
+        }
+
         li{
             list-style: none;
+            list-style-type: none;
             color: #f6f7f0;
             font-size: 20px;
             letter-spacing: 0.5px;
@@ -295,27 +419,26 @@
         </div>
     </div>
     <div class="container-fluid row benefit" >
-        <div class="benefit col-sm-4 ">
-            <h2> Benefits </h2>
-            <ul>
-                <li> Full time Mentorship</li>
+        <div class="container benefit col-sm-4" id="benefit">
+            <h2 class="h2 "> Benefits </h2>
+            <ul id="benelist">
+                <li > Full time Mentorship</li>
                 <li> Expert Instructors</li>
                 <li> Real Time Collaboration</li>
                 <li> Build Real Time Products</li>
                 <li> Learn up-to-date remote tools</li>
                 <li> Offline Meet-ups</li>
             </ul>
-            <a href="register.html" style="color: #fff;"><button class="btn btn-success mb-4" title="Start learning"> Start Learning</button></a> 
+            <a id="benebtn" href="register.html" style="color: #fff;"><button class="btn btn-success mb-4" title="Start learning"> Start Learning</button></a> 
         </div>
         <div class="col-sm-8">
-            <img style="float: right; padding:30px; width:398px; height: 587px;
-" class="img-fluid" src="https://res.cloudinary.com/ratselaft/image/upload/v1571145212/screen1_uvs2zn.png">
+            <img id="imgsm" class="img-fluid" src="https://res.cloudinary.com/ratselaft/image/upload/v1571145212/screen1_uvs2zn.png">
         </div>
-        <div class="col-md-8 offset-md-1">
+        <div class="col-md-8 col-lg-4 offset-md-1" id="beneem">
             <h4 class="font-weight-bold" style="color: white;">Subscribe to our Newsletter</h4>
             <p style="color: white;">Stay Updated with our latest news, discount and promotions</p>
             <form class="form-inline pb-5">
-                <input type="email" class="form-control   col-sm-9  col-12  " placeholder="Email Address"><button type="submit" class="btn btn-success mt-2 mt-sm-0 ml-sm-2">Subscribe</button>
+                <input type="email" class="form-control   col-sm-9  col-12  " placeholder="Email Address"><button type="submit" class="btn btn-success mt-2 mt-sm-0 ml-sm-2" id="embtn">Subscribe</button>
             </form>
         </div>
     </div>
